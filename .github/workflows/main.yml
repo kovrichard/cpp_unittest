@@ -32,4 +32,4 @@ jobs:
         run: g++ hello.cpp -o hello
 
       - name: Check memory leaks
-        run: valgrind --error-exitcode=1 ./hello
+        run: valgrind -v --error-exitcode=1 ./hello

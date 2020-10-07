@@ -35,4 +35,4 @@ jobs:
         run: ./hello
 
       - name: Run valgrind
-        run: valgrind ./hello
+        run: valgrind -s --error-exitcode=1 ./hello

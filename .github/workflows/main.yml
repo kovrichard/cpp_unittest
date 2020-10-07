@@ -27,7 +27,6 @@ jobs:
         run: |
           sudo apt-get -y update
           sudo apt-get -y install g++ valgrind
-          poetry install
 
       - name: Compile code
         run: g++ hello.cpp -o hello
